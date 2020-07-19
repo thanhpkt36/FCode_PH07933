@@ -1,0 +1,248 @@
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+  
+<div class="fixed-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" (click)="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#carouselHome" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" (click)="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" (click)="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" (click)="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<div id="carouselHome" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselHome" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselHome" data-slide-to="1"></li>
+    <li data-target="#carouselHome" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-interval="2000">
+      <img src="https://wallpaperplay.com/walls/full/3/c/4/164624.jpg" class="d-block w-100" alt="...">
+      <!-- Phầm ở trong -->
+      <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+        <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+          <h1 class="w3-xlarge">Kết nối với tôi... <i class="fa fa-facebook-official"></i></h1>
+          <hr class="w3-opacity">
+          <p></p>
+          <p><button class="w3-button w3-block w3-green w3-round" (click)="connect_fb()">Liên hệ ngay </button></p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item"  data-interval="2000">
+      <img src="https://i0.wp.com/pixelpluck.com/wp-content/uploads/2015/03/Camera_Lens_Nikon_DSLR_photography_1920x1080.jpg?fit=1920%2C1080&ssl=1" class="d-block w-100" alt="...">
+      <!-- Phầm ở trong -->
+      <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+        <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+          <h1 class="w3-xlarge">Kết nối với tôi... <i class="fa fa-instagram"></i></h1>
+          <hr class="w3-opacity">
+          <p></p>
+          <p><button class="w3-button w3-block w3-green w3-round" (click)="connect_ins()">Liên hệ ngay </button></p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item"  data-interval="2000">
+      <img src="https://wallpaperaccess.com/full/982970.jpg" class="d-block w-100" alt="...">
+      <!-- Phầm ở trong -->
+      <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+        <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+          <h1 class="w3-xlarge">Kết nối với tôi... <i class="fa fa-google"></i></h1>
+          <hr class="w3-opacity">
+          <p></p>
+          <p><button class="w3-button w3-block w3-green w3-round" (click)="connect_gg()">Liên hệ ngay </button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <a class="carousel-control-prev" href="#carouselHome" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a> -->
+  <a class="carousel-control-next" href="#carouselHome" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em>I love programming</em></p>
+  <p>Hello everyone, my name is <strong>Pham Khac Thanh</strong>. I'm currently studying at FPT Polytechnic Practice College, specializing in information technology - Software applications.
+    I am currently in the 6/7 semester of the school and in the future, I will be a computer programmer. This is my website made to join the study program and get a certificate when joining the club
+    F-Code...</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Khac Thanh</b></p><br>
+      <img src="https://scontent.fhan2-2.fna.fbcdn.net/v/t1.0-9/s960x960/103121719_1470248103173354_6237760306736286211_o.jpg?_nc_cat=106&_nc_sid=110474&_nc_ohc=zeCCTIAc9JwAX-znPa0&_nc_ht=scontent.fhan2-2.fna&_nc_tp=7&oh=d5f0cf8a4ade576d484e0229aba1ad8f&oe=5F3B9C11" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Chào mọi người, mình tên là <strong>Phạm Khắc Thanh</strong>. Mình hiện tại đang học tập tại trường Cao đẳng Thực hành FPT Polytechnic chuyên ngành công nghệ thông tin - Ứng dụng phần mềm.
+        Hiện tại mình đang học kỳ 6/7 của trường và tương lai, mình sẽ là một lập trình viên máy tính. Đây là website của mình làm để tham gia chương trình học tập và có chứng chỉ khi tham gia câu lạc bộ
+        F-Code...</p>
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16">My Life is : </p>
+  <p class="w3-wide"><i class="fa fa-camera"></i>Developed</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Bike</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>Photography</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">14+</span><br>
+    Partners
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">55+</span><br>
+    Projects Done
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">89+</span><br>
+    Happy Clients
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">150+</span><br>
+    Meetings
+  </div>
+</div>
+
+
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">MY WORK</h3>
+  <p class="w3-center"><em>Here are some of my latest lorem work - Một số sản phẩm mới nhất của tôi.<br> Click on the images to make them bigger - Nhấp vào để xem ảnh lớn hơn</em></p><br>
+
+
+  <div class="w3-center">
+    <div class="w3-row-padding">
+      <div class="w3-col m3">
+        <img src="https://dvyvvujm9h0uq.cloudfront.net/com/articles/1543483387-reinhart-julian-1145947-unsplash.jpg" style="width:100%" (click)="onClick($event)" class="w3-hover-opacity" alt="Đây là ảnh lấy trên mạng ♥">
+      </div>
+  
+      <div class="w3-col m3">
+        <img src="https://www.unidesign.edu.vn/sites/default/files/photographer-692035_640.jpg" style="width:100%" (click)="onClick($event)" class="w3-hover-opacity" alt="Đây là ảnh lấy trên mạng ♥">
+      </div>
+  
+      <div class="w3-col m3">
+        <img src="https://lh3.googleusercontent.com/proxy/y8vtKmPj9KctVk0SsN8u8RNw-YI2Hk68FH8FkwYtW3vf6lOrO0p7GYRPuWzlpQP2Qi43Us6-YBkjKl0nYIkRS_TlvD7mdFfm1uknxFnWROkDEeDljnkI" style="width:100%" (click)="onClick($event)" class="w3-hover-opacity" alt="Đây là ảnh lấy trên mạng ♥">
+      </div>
+  
+      <div class="w3-col m3">
+        <img src="https://images.unsplash.com/photo-1549226564-0b725e5e30d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=759&q=80" style="width:100%" (click)="onClick($event)" class="w3-hover-opacity" alt="Đây là ảnh lấy trên mạng ♥">
+      </div>
+    </div>
+  
+    <div class="w3-row-padding w3-section">
+      <div class="w3-col m3">
+        <img src="https://images.unsplash.com/photo-1495545711126-895bd6b6217d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" style="width:100%" (click)="onClick($event)" class="w3-hover-opacity" alt="Đây là ảnh lấy trên mạng ♥">
+      </div>
+  
+      <div class="w3-col m3">
+        <img src="https://we25.vn/media2018/Img_News/2019/05/05/ky-yeu-tren-cao-nguyen-dat-do_20190505094720.jpg" style="width:100%" (click)="onClick($event)" class="w3-hover-opacity" alt="Đây là ảnh lấy trên mạng ♥">
+      </div>
+  
+      <div class="w3-col m3">
+        <img src="https://znews-photo.zadn.vn/w660/Uploaded/mdf_eioxrd/2018_07_16/Minh_Tu_Dang_2_1.jpg" style="width:100%" (click)="onClick($event)" class="w3-hover-opacity" alt="Đây là ảnh lấy trên mạng ♥">
+      </div>
+  
+      <div class="w3-col m3">
+        <img src="https://binhminhdigital.com/StoreData/images/PageData/bi-quyet-chup-anh-hoang-hon-dep-Binhminhdigital1(1).jpg" style="width:100%" (click)="onClick($event)" class="w3-hover-opacity" alt="Đây là ảnh lấy trên mạng ♥">
+      </div>
+    </div>
+    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px" (click)="loadMore()">LOAD MORE</button>
+  </div>
+  
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">WHERE I WORK - NƠI TÔI LÀM VIỆC</h3>
+  <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <iframe class="w3-image w3-round" style="width:100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.8939481093375!2d105.80097391429801!3d21.036928992876735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab3fa3798a97%3A0x28890c5d78667d07!2zTmfDtSA1OCwgUXVhbiBIb2EsIEPhuqd1IEdp4bqleSwgSMOgIE7hu5lpLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1595169954529!5m2!1svi!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Hanoi, Vietnam<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +987654321<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: thanhpkt36@gmail.com<br>
+      </div>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note - Để lại cho tôi một lời nhắn:</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#carouselHome" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Lên đầu trang</a>
+  <p>Developed by <a href="https://www.facebook.com/onlyfish.ryo" title="Thanh" target="_blank" class="w3-hover-text-green">thanhpkt36@gmail.com</a></p>
+</footer>
+
+</body>
